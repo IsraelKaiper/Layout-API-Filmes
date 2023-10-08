@@ -1,0 +1,31 @@
+.form-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 20px;
+    width: 100%; 
+  }
+  
+  .form-control {
+    flex-grow: 1;
+    max-width: 400px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .btn-outline-success {
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    color: #00bcd4;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #0097a7;
+  }
+  

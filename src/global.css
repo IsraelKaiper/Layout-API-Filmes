@@ -1,17 +1,30 @@
-* {
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body, h1, h2, h3, h4, p {
   margin: 0;
   padding: 0;
+}
+
+* {
   box-sizing: border-box;
-  font-family: 'League Spartan', sans-serif;
 }
 
 body {
-  background-color: black;
-  color: white;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  background-color: #1f1f1f; 
+  color: #fff;
 }
 
-::-webkit-scrollbar {
-  display: none;
+body {
+  scrollbar-width: thin; 
+  scrollbar-color: #00bcd4 transparent; 
+}
+
+body::-webkit-scrollbar {
+  width: 8px; 
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #00bcd4; 
 }

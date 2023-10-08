@@ -1,51 +1,91 @@
 nav {
+  background-color: #141414;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+
+.container {
+  background-color: #1f1f1f;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+
+.link_button {
+  margin-top: 20px;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #00bcd4;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+
+  &:hover {
+    background-color: #0097a7;
+    transform: scale(1.1);
+  }
+}
+
+
+.img_container {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-nav h1 {
-  text-align: center;
-}
-
-.container {
-  text-align: center;
-}
-
-.link_button {
-  margin-top: 5px;
-  padding: 0.7rem 3rem;
-  border: none;
-  border-radius: 15px;
-  color: #212121;
-  background-color: #ffffff;
-  font-weight: 1000;
-  font-size: 12 px;
-  cursor: pointer;
-  transition: all 250ms;
-}
-.link_button:hover{
-  transform: scale(1.1);
+  height: 100vh;
+  background-color: #1f1f1f;
 }
 
 .img_movie {
-  width: 20%;
-  margin: 0 40%;
+  max-width: 30%;
+  margin: 0 auto;
+  display: block;
+  border: 8px solid rgba(0, 0, 0, 0.2); /* Adiciona uma borda transparente */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transição suave para transformação e sombra */
+
+  &:hover {
+    transform: scale(1.1); /* Expande a imagem quando o mouse passa por cima */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+  }
 }
 
 .movie-desc {
   text-align: justify;
+  font-size: 1.2rem;
+  margin: 2rem auto;
+  max-width: 800px;
 }
+
+
 .descricao {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 0 30%;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 800px;
 }
+
 .descricao h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
+
 .descricao p {
+  font-size: 1.2rem;
   text-indent: 30px;
+  line-height: 1.5;
 }
